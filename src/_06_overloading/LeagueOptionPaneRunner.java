@@ -8,5 +8,7 @@ public class LeagueOptionPaneRunner {
 	public static void main(String[] args) {
 		LeagueOptionPane pain = new LeagueOptionPane();
 		pain.showMessageDialog("lol");
+		pain.showMessageDialog("lol", "totle");
+		pain.showMessageDialog("lol", "totle", "leagueDark.png");
 	}
 }
