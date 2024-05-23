@@ -1,5 +1,6 @@
 package _08_LeagueSnake;
 
+import processing.core.PApplet;
 /*
  * This class will be used to represent each part of the moving snake.
  * 
@@ -8,12 +9,14 @@ package _08_LeagueSnake;
  * 
  * 2. Add a constructor with parameters to initialize each variable.
  */
-public class Segment {
-    int x;
-    int y;
+public class Segment extends PApplet{
+    float x;
+    float y;
     
-    public Segment() {
-    	
+    public Segment(float x, float y) {
+    	this.x = x;
+    	this.y=y;
+    	rect(x,y,10f,10f);
     }
 	
 }

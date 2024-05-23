@@ -28,8 +28,9 @@ public class LeagueSnake extends PApplet {
 
     @Override
     public void setup() {
-        head = new Segment();
+        head = new Segment(2f,2f);
         frameRate(20);
+        dropFood();
     }
 
     void dropFood() {
@@ -55,11 +56,13 @@ public class LeagueSnake extends PApplet {
     void drawFood() {
         // Draw the food
         color(255,0,0);
+        rect(10,10,foodX,foodY);
     }
 
     void drawSnake() {
         // Draw the head of the snake followed by its tail
     	color(0,255,0);
+    	Segment newSeg = new Segment(12f,12f);
     }
 
     void drawTail() {
